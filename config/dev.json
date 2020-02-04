@@ -1,0 +1,8 @@
+{
+    "Host": "localhost",
+    "HTTPPort": "8080",
+    "DbHost": "127.0.0.1:3306",
+    "DbName": "TST",
+    "DbUsername": "root",
+    "DbPassword": "test"
+}

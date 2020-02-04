@@ -1,0 +1,22 @@
+{{ define "Create" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <h5>&nbsp;&nbsp;&nbsp;Create Name Email and Password</h5>  
+    <form method="POST" action="insert">
+      <div class="form-group">
+            <div class="col-sm-3 my-1">
+                <label for="Username"> User Name </label><input class="form-control" type="text" name="Username" "  /><br />
+            </div>
+            <div class="col-sm-3 my-1">
+                <label> Password </label><input class="form-control" type="text" name="Password"  /><br />
+            </div>
+            <div class="col-sm-3 my-1">
+                <label> Email </label><input class="form-control" type="text" name="Email" /><br />
+            </div>
+            <div class="col-sm-3 my-1">
+                <input type="submit" class="btn btn-primary mb-2" value="Save user" />
+            </div>
+        </div>
+    </form>
+  {{ template "Footer" }}
+{{ end }}

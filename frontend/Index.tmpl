@@ -1,0 +1,32 @@
+{{ define "Index" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h4 style="text-align:center;"> User Index </h4>
+    <table class="table table-striped table-dark">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</td>
+          <th scope="col">Name</td>
+          <th scope="col">Password</td>
+          <th scope="col">Email</td>
+          <th scope="col">Read</td>
+          <th scope="col">Edit</td>
+          <th scope="col">Delete</td>
+        </tr>
+      </thead>
+      <tbody>
+    {{ range . }}
+      <tr>
+        <th scope="row">{{ .Id }}</td>
+        <td> {{ .Username }} </td>
+        <td>{{ .Password }} </td> 
+        <td>{{ .Email }} </td>
+        <td ><a class="btn btn-primary" href="/read?id={{ .Id }}">Read</a></td>
+        <td><a class="btn btn-secondary" href="/edit?id={{ .Id }}">Edit</a></td>
+        <td><a class="btn btn-danger" href="/delete?id={{ .Id }}">Delete</a><td>
+      </tr>
+    {{ end }}
+      </tbody>
+    </table>
+  {{ template "Footer" }}
+{{ end }}

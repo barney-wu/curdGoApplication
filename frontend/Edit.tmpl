@@ -1,0 +1,23 @@
+{{ define "Edit" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <h5>&nbsp;&nbsp;&nbsp;Edit Name Email and Password</h5>  
+    <form method="POST" action="update">
+        <div class="form-group">
+            <input type="hidden" name="user_id" value="{{ .Id }}" />
+            <div class="col-sm-3 my-1">
+                <label for="Username"> User Name </label><input class="form-control" type="text" name="Username" value="{{ .Username }}"  /><br />
+            </div>
+            <div class="col-sm-3 my-1">
+                <label> Password </label><input class="form-control" type="text" name="Password" value="{{ .Password }}"  /><br />
+            </div>
+            <div class="col-sm-3 my-1">
+                <label> Email </label><input class="form-control" type="text" name="Email" value="{{ .Email }}"  /><br />
+            </div>
+            <div class="col-sm-3 my-1">
+                <input type="submit" class="btn btn-primary mb-2" value="Save user" />
+            </div>
+        </div>
+    </form><br />    
+  {{ template "Footer" }}
+{{ end }}

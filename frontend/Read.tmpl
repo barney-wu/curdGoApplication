@@ -1,0 +1,14 @@
+{{ define "Read" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <div class="card"">
+        <div class="card-body">
+        <h5 class="card-title">User ID: {{.Id}}</h5>
+        <p class="card-text">Name: {{ .Username }}</p>
+        <p class="card-text">Password: {{ .Username }}</p>
+        <p class="card-text">Email: {{ .Email }}</p>
+        <a href="/edit?id={{ .Id }}" class="card-link">Edit</a>
+  </div>
+
+  {{ template "Footer" }}
+{{ end }}
