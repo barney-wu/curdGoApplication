@@ -2,22 +2,24 @@
 
 This is a simple CURD application written in Golang.
 
-Create a database with mysql.
 
-CREATE DATABASE TST;
+Create a local database with mysql.
 
-USE DATABASE TST;
+  CREATE DATABASE TST;
 
-CREATE TABLE users (
+  USE DATABASE TST;
 
-user_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  CREATE TABLE users (
 
-username VARCHAR(40),
+    user_id INT(11) AUTO_INCREMENT PRIMARY KEY,
 
-password VARCHAR(255),
+    username VARCHAR(40),
 
-email VARCHAR(255),
-)
+    password VARCHAR(255),
+
+    email VARCHAR(255),
+  )
+
 
 To build it
 
