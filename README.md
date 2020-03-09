@@ -2,6 +2,8 @@
 
 This is a simple CURD application written in Golang.
 
+Demo:
+ ![image](https://user-images.githubusercontent.com/31710470/76237408-04a15400-620d-11ea-993c-9b7d49595aa2.png)
 
 Create a local database with mysql.
 
@@ -37,6 +39,5 @@ To build it
 
   go run main.go
   
- Visit
-    localhost:8080
-  ![image](https://user-images.githubusercontent.com/31710470/76237408-04a15400-620d-11ea-993c-9b7d49595aa2.png)
+ Visit http://localhost:8080
+ 
